@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* General styles for the navigation bar */
+nav {
+  background-color: #333; /* Dark background */
+  padding: 1rem 2rem; /* Spacing */
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+}
+
+/* Style for the unordered list */
+nav ul {
+  list-style-type: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange items horizontally */
+  gap: 1.5rem; /* Add space between links */
+}
+
+/* Style for individual list items */
+nav ul li {
+  font-size: 1rem;
+}
+
+/* Style for the links */
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text color */
+  padding: 0.5rem 1rem; /* Spacing inside the links */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+  background-color: #555; /* Slightly lighter background */
+  color: #f0f0f0; /* Light text color on hover */
+}
+
+/* Responsive design: stack the links on smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Stack items vertically */
+      gap: 1rem; /* Add space between stacked links */
+      align-items: center; /* Center items */
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
