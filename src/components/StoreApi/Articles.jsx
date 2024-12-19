@@ -4,7 +4,7 @@ const Articles = ()=>{
     const {panier,dispatch}= useContext(PanierContext)
     const {articles,setArticles} = useContext(PanierContext)
     useEffect(()=>{
-        fetch('http://localhost:5000/products')
+        fetch('https://fakestoreapi.com/products')
             .then(res=>res.json())
             .then(json=>setArticles(json))
     },[])
